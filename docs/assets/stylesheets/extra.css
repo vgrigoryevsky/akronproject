@@ -1,0 +1,31 @@
+:root > * {
+    /*--md-primary-fg-color: #153B59;*/
+    /*--md-primary-fg-color: var(--md-footer-bg-color);*/
+    --md-primary-fg-color: #000000; !important;
+    /*--md-primary-fg-color--light: #ECB7B7;*/
+    /*--md-primary-fg-color--dark: #90030C;*/
+    /*--md-typeset-a-color: #02A6F2FF;*/
+}
+
+p {
+    text-align: justify;
+}
+
+.two-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.column {
+    flex: 1;
+    margin: 0 10px;
+}
+
+.md-typeset a.inline-link {
+    color: var(--md-typeset-a-color);
+    text-decoration: underline;
+    font-weight: 400;
+    padding: 0;
+    border: 0;
+    background: none;
+}

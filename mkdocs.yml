@@ -1,0 +1,155 @@
+# Project information
+site_name: Akron Project
+site_url: https://akronproject.com
+site_author: Valentin Grigoryevsky
+site_description: >-
+  A curated list of technology gaps, highlighting their impact 
+  on both space sensing and global challenges on Earth. 
+
+# Copyright
+copyright: Copyright &copy; 2026 Akron Project
+
+# Configuration
+theme:
+  name: material
+  features:
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.code.copy
+    - content.code.select
+    # - content.footnote.tooltips
+    - content.tabs.link
+    - content.tooltips
+    # - header.autohide
+    # - navigation.expand
+    # - navigation.footer
+    - navigation.indexes
+    # - navigation.instant
+    # - navigation.instant.prefetch
+    # - navigation.instant.progress
+    # - navigation.prune
+    - navigation.sections
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
+  palette:
+    scheme: default
+  font:
+    h: Fira Code
+    text:  Fira Code
+    code: Source Code Pro
+  favicon: assets/images/favicon.ico
+  logo: assets/images/logo.svg
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+plugins:
+  - blog:
+      post_date_format: full
+      archive_name: Posting date
+      archive_date_format: MMMM yyyy
+      archive_url_date_format: yyyy/MM
+      archive_url_format: "{date}"
+      categories_url_format: "{slug}"
+      categories_allowed:
+        - 0. Announcements
+        - 0. Trending
+  - search:
+      separator: '[\s\u200b\-_,:!=\[\]()"`/]+|\.(?!\d)|&[lg]t;|(?!\b)(?=[A-Z][a-z])'
+  - social
+
+# Additional configuration
+extra:
+  status:
+    new: Recently added
+    deprecated: Deprecated
+  analytics:
+    provider: google
+    property: G-PGQY4RT7B1
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/vgrigoryevsky/akronproject
+#    - icon: fontawesome/brands/linkedin
+#      link: https://www.linkedin.com/company/...
+#    - icon: fontawesome/brands/threads
+#      link: https://www.threads.net/@...
+#    - icon: fontawesome/brands/x-twitter
+#      link: https://x.com/...
+#    - icon: fontawesome/brands/telegram
+#      link: https://t.me/...
+  generator: false
+
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# not_in_nav: |
+
+
+# Page tree
+nav:
+  - About:
+      - index.md
+  - Akron List:
+      - list/index.md
+      - AKRON-1: list/akron-1/index.md
+  - Dictionaries:
+      - dictionaries/index.md
+      - Technology Gap Taxonomy: dictionaries/technology-gap-taxonomy/index.md
+      - Technologies: dictionaries/technologies/index.md
+      - Space Sensing Applications: dictionaries/space-sensing-applications/index.md
+      - Earth Applications: dictionaries/earth-applications/index.md
+      - UN 2030 Sustainable Development Goals: dictionaries/un-2030-sdgs/index.md
+      - OECD Frascati R&D Fields: dictionaries/oecd-frascati-rnd-fields/index.md
+      - Sources: dictionaries/sources/index.md
