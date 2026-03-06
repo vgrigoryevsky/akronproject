@@ -9,7 +9,7 @@ verify_ssl = true
 mkdocs = "*"
 mkdocs-static-i18n = "*"
 markdown = "*"
-mkdocs-material = "*"
+mkdocs-material = {extras = ["imaging"], version = "*"}
 pymdown-extensions = "*"
 
 [requires]
