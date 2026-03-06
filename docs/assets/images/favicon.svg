@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Akron Space Horizon favicon">
+  <title>Akron Space Horizon</title>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0b1220"/>
+      <stop offset="100%" stop-color="#111f38"/>
+    </linearGradient>
+    <linearGradient id="arc" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#84d1ff"/>
+      <stop offset="100%" stop-color="#2f86ff"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" rx="12" fill="url(#bg)"/>
+  <path d="M6 46c7.5-5.8 16.5-8.8 26-8.8S50.5 40.2 58 46" fill="none" stroke="url(#arc)" stroke-width="3.4" stroke-linecap="round"/>
+  <path d="M8 50c7-4.2 15.7-6.3 24-6.3S49 45.8 56 50" fill="none" stroke="#b9e2ff" stroke-opacity="0.65" stroke-width="1.8"/>
+  <path d="M32 16l7 18.5h-3.5l-1.6-4.4h-3.8l-1.6 4.4H25z" fill="none" stroke="#ffffff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48.3" cy="18.2" r="1.8" fill="#e4f3ff"/>
+</svg>

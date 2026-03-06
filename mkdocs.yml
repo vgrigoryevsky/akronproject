@@ -43,10 +43,9 @@ theme:
   palette:
     scheme: default
   font:
-    h: Fira Code
-    text:  Fira Code
-    code: Source Code Pro
-  favicon: assets/images/favicon.ico
+    text: Source Sans 3
+    code: JetBrains Mono
+  favicon: assets/images/favicon.svg
   logo: assets/images/logo.svg
 
 extra_css:

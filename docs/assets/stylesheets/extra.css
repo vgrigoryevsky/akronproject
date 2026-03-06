@@ -1,10 +1,21 @@
 :root > * {
     /*--md-primary-fg-color: #153B59;*/
     /*--md-primary-fg-color: var(--md-footer-bg-color);*/
-    --md-primary-fg-color: #000000; !important;
+    --md-primary-fg-color: #000000;
     /*--md-primary-fg-color--light: #ECB7B7;*/
     /*--md-primary-fg-color--dark: #90030C;*/
-    /*--md-typeset-a-color: #02A6F2FF;*/
+    --md-typeset-a-color: #0b57d0;
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4,
+.md-typeset h5,
+.md-typeset h6,
+.md-header__title,
+.md-nav__title {
+    font-family: "Merriweather", Georgia, serif;
 }
 
 p {
@@ -28,4 +39,14 @@ p {
     padding: 0;
     border: 0;
     background: none;
+}
+
+.md-typeset a {
+    color: var(--md-typeset-a-color);
+    text-decoration: underline;
+}
+
+.md-typeset a:hover,
+.md-typeset a:focus {
+    color: #0842a0;
 }
