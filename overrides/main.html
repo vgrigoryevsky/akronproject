@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {{ super() }}
+  <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+  <meta name="googlebot" content="index, follow">
+
+  {% set seo_title = page.meta.title if page and page.meta and page.meta.title else ((page.title ~ " - " ~ config.site_name) if page else config.site_name) %}
+  {% set seo_description = page.meta.description if page and page.meta and page.meta.description else config.site_description %}
+  {% set canonical = page.canonical_url if page and page.canonical_url else config.site_url %}
+  <meta name="description" content="{{ seo_description }}">
+  <link rel="canonical" href="{{ canonical }}">
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="{{ config.extra.seo.site_name }}">
+  <meta property="og:title" content="{{ seo_title }}">
+  <meta property="og:description" content="{{ seo_description }}">
+  <meta property="og:url" content="{{ canonical }}">
+  <meta property="og:image" content="{{ config.extra.seo.logo_url }}">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ seo_title }}">
+  <meta name="twitter:description" content="{{ seo_description }}">
+  <meta name="twitter:image" content="{{ config.extra.seo.logo_url }}">
+
+  {% set website_schema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": config.site_name,
+    "url": config.site_url,
+    "description": config.site_description,
+    "publisher": {
+      "@type": "Organization",
+      "name": config.extra.seo.organization_name,
+      "url": config.extra.seo.organization_url,
+      "logo": {
+        "@type": "ImageObject",
+        "url": config.extra.seo.logo_url
+      }
+    }
+  } %}
+  <script type="application/ld+json">{{ website_schema | tojson }}</script>
+{% endblock %}

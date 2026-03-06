@@ -12,6 +12,7 @@ copyright: Copyright &copy; 2026 Akron Project
 # Configuration
 theme:
   name: material
+  custom_dir: overrides
   features:
     - announce.dismiss
     - content.action.edit
@@ -71,6 +72,11 @@ extra:
   status:
     new: Recently added
     deprecated: Deprecated
+  seo:
+    site_name: Akron Project
+    organization_name: Akron Project
+    organization_url: https://akronproject.com
+    logo_url: https://akronproject.com/assets/images/logo.svg
   analytics:
     provider: google
     property: G-PGQY4RT7B1
