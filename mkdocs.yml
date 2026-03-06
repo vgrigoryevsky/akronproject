@@ -142,8 +142,7 @@ nav:
   - About:
       - index.md
   - Akron List:
-      - list/index.md
-      - AKRON-1: list/akron-1/index.md
+      - akron-list/index.md
   - Dictionaries:
       - dictionaries/index.md
       - Technology Gap Taxonomy: dictionaries/technology-gap-taxonomy/index.md
