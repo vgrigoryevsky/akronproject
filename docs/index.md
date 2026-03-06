@@ -1,7 +1,5 @@
 # Akron Project
 
-[//]: # ([**View Akron List**]&#40;list/index.md&#41;{ .md-button .md-button--primary })
-
 ## Vision
 
 Space sensing forms the foundation of space exploration, enabling humanity’s future.
@@ -68,7 +66,7 @@ flowchart
 
 This project is maintained by [Valentin Grigoryevsky](https://www.linkedin.com/in/vgrigoryevsky/).
 
-For questions, suggestions, or contributions regarding The Akron List, please contact the maintainer.
+For questions, suggestions, or contributions regarding The [Akron List](akron-list/index.md), please contact the maintainer.
 
 ## License
 

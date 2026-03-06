@@ -70,10 +70,10 @@ Each record captures the current state, required capability advances, mapped tec
 - **Space Sensing Applications**:
   - [SAPP-2: Astrophysics (Far-Infrared Astronomy)](../dictionaries/space-sensing-applications/index.md#sapp-2)
 - **Earth Applications**:
+  - [EAPP-15: Climate Monitoring and Benchmarking](../dictionaries/earth-applications/index.md#eapp-15)
 - **UN 2030 SDG Goals**:
   - [SDG-9: Industry, Innovation and Infrastructure](../dictionaries/un-2030-sdgs/index.md#sdg-9)
   - [SDG-13: Climate Action](../dictionaries/un-2030-sdgs/index.md#sdg-13)
-  - [EAPP-15: Climate Monitoring and Benchmarking](../dictionaries/earth-applications/index.md#eapp-15)
 - **R&D Fields**:
   - [1.3. Physical sciences](../dictionaries/oecd-frascati-rnd-fields/index.md#frascati-1)
   - [2.2. Electrical engineering, electronic engineering, information engineering](../dictionaries/oecd-frascati-rnd-fields/index.md#frascati-2)
