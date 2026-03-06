@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Akron Space Horizon logo">
+  <title>Akron Space Horizon</title>
+  <defs>
+    <linearGradient id="horizonGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#7ec8ff"/>
+      <stop offset="100%" stop-color="#1d6ddc"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="64" height="64" fill="none"/>
+  <path d="M4 46c8-6 17-9 28-9s20 3 28 9" fill="none" stroke="url(#horizonGlow)" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M4 50c8-4.5 17-6.8 28-6.8S52 45.5 60 50" fill="none" stroke="#bfe4ff" stroke-opacity="0.85" stroke-width="1.8"/>
+  <path d="M32 15l7.5 20h-3.8l-1.7-4.8h-4l-1.7 4.8h-3.8z" fill="none" stroke="#eef7ff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="48.5" cy="18" r="1.9" fill="#eef7ff"/>
+</svg>
